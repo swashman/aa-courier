@@ -1,0 +1,7 @@
+{% load i18n %}
+{% load navactive %}
+
+{% url 'courier:index' as url_index %}
+{% navactive request 'courier:index' as navactive_index %}
+{% translate "Home" as l10n_index %}
+{% include "courier/partials/navigation/navigation-item.html" with url=url_index navactive=navactive_index title=l10n_index %}

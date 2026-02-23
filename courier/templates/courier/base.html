@@ -1,0 +1,23 @@
+{% extends 'allianceauth/base-bs5.html' %}
+{% load i18n %}
+
+{% block page_title %}{% translate "Page Title" %}{% endblock %}
+
+{% block header_nav_brand %}
+    {% translate "Page Title" %}
+{% endblock header_nav_brand %}
+
+{% block header_nav_collapse_left %}
+    {% include "courier/partials/navigation/left-navigation.html" %}
+{% endblock %}
+
+{% block header_nav_collapse_right %}
+    {% include "courier/partials/navigation/right-navigation.html" %}
+{% endblock header_nav_collapse_right %}
+
+
+{% block content %}
+    <div class="aa-courier">
+        {% block details %}{% endblock %}
+    </div>
+{% endblock %}
